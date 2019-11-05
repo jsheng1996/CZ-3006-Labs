@@ -6,4 +6,9 @@ Lab 2 - Socket programming with Java.net
 RFC 865: https://tools.ietf.org/html/rfc865
 
 Lab 4 - Analyse network data:
-SFlow log file in CSV and Python script to parse data.
+sFlow log file in CSV and Python script to parse data.
+More about sFlow: https://sflow.org/sFlowOverview.pdf
+Python script dependancies:
+pandas
+networkx
+matplotlib
