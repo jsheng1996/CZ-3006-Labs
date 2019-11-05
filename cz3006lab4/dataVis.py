@@ -10,8 +10,9 @@ Created on Fri Oct 18 18:30:06 2019
 '''
 import pandas as pd
 import networkx as nx
+import matplotlib.pyplot as plt
 
-df= pd.read_csv('test_SFlow_data.csv', index_col=False,names=['type','flow_agent_addr',
+df= pd.read_csv('SFlow_Data_1.csv', index_col=False,names=['type','flow_agent_addr',
 'inputPort','outputPort','src_MAC','dst_MAC','eth_type','in_vlan','out_vlan',
 'src_IP','dst_IP','IP_Protocol','ip_tos','ip_ttl','src_port','dst_port',
 'tcp_flags','packet_size','IP_size','sampling_rate'])
@@ -25,7 +26,7 @@ tcp_count = df['IP_Protocol'].value_counts().get(6)
 udp_count = df['IP_Protocol'].value_counts().get(17)
 top3_IP_Protocols = df['IP_Protocol'].value_counts()[:3]
 
-top5_apps_protocol = top3_IP_Protocols = df['IP_Protocol'].value_counts()[:5]
+top5_apps_protocol = df['dst_port'].value_counts()[:5]
 
 total_traffic = df['IP_size'].sum()
 
@@ -35,6 +36,10 @@ print('\n')
    
 print('Top 5 Listeners (IP):')
 print(top5_listeners_ip)
+print('\n')
+
+print('Top 3 IP Protocols:')
+print(top3_IP_Protocols)
 print('\n')
 
 print('Top 5 Application Protocols:')
@@ -65,30 +70,27 @@ nodes = list(set(df['src_IP'].tolist()+df['dst_IP'].tolist())) #creating nodes
 G.add_nodes_from(nodes)
 for (p,n) in pairs_sorted:
     G.add_edge(p.split('/')[0], p.split('/')[1], weight=n)
-color = []
 size = []
 for node in nodes:
     if G.degree(node, weight='weight')<25:
-        color.append('g')
-        size.append(50)
+        #color.append('g')
+        size.append(5)
     elif G.degree(node, weight='weight')<50:
-        color.append('b')
-        size.append(100)
+        #color.append('b')
+        size.append(10)
     elif G.degree(node, weight='weight')<75:
-        color.append('c')
-        size.append(150)
+        #color.append('c')
+        size.append(15)
     elif G.degree(node, weight='weight')<100:
-        color.append('y')
-        size.append(200)
+        #color.append('y')
+        size.append(20)
     elif G.degree(node, weight='weight')<125:
-        color.append('m')
-        size.append(250)
+        #color.append('m')
+        size.append(25)
     else:
-        color.append('r')
-        size.append(300)
+        #color.append('r')
+        size.append(30)
 edges = G.edges()
-weights = [G[u][v]['weight']/10 for u,v in edges]
+weights = [G[u][v]['weight']/500 for u,v in edges]
 print('Network visualised:\n')
-nx.draw_random(G, node_size=size, node_color=color, width=weights)
-
-
+nx.draw_spring(G, node_size=size, node_color=range(len(nodes)), width=weights, cmap=plt.cm.bwr)
