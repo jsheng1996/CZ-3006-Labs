@@ -15,8 +15,7 @@ matplotlib
 
 ### Geospatial Visualization:
 #### Corresponding geolocation of IPs
-<img src="https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Geolocations.png?raw=true" width="100%" height="100%">
-![Corresponding geolocation of IPs](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Geolocations.png?raw=true){ width=50% } 
+![Corresponding geolocation of IPs](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Geolocations.png?raw=true) 
 
 #### Heatmap based on number of packets sent
 ![Heatmap based on number of packets sent](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Heat%20Map.png?raw=true)
