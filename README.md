@@ -12,3 +12,7 @@ Python script dependancies:
 pandas  
 networkx  
 matplotlib  
+
+### Geospatial Visualization for source IP:
+![alt text](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/Source%20IP%20Geolocations.png?raw=true)
+![alt text](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/Source%20IP%20Heat%20Map.png?raw=true)
