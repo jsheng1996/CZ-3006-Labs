@@ -13,6 +13,10 @@ pandas
 networkx  
 matplotlib  
 
+### Network Visualization (static preview):
+![Network Visualization (static preview)](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/network/static%20preview.png?raw=true)
+
+
 ### Geospatial Visualization:
 #### Corresponding geolocation of IPs
 ![Corresponding geolocation of IPs](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Geolocations.png?raw=true) 
