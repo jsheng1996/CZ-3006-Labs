@@ -14,7 +14,10 @@ pandas
 networkx  
 matplotlib  
 
-### Network Visualization (static preview):
+### Network Visualization 
+#### Live Site:
+https://raw.githack.com/jsheng1996/CZ-3006-Labs/master/cz3006lab4/network.html
+#### Static Preview:
 ![Network Visualization (static preview)](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/network/static%20preview.png?raw=true)
 
 
