@@ -25,6 +25,6 @@ https://raw.githack.com/jsheng1996/CZ-3006-Labs/master/cz3006lab4/network.html
 #### Corresponding geolocation of IPs
 ![Corresponding geolocation of IPs](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Geolocations.png?raw=true) 
 
-#### Heatmap based on number of packets sent
-![Heatmap based on number of packets sent](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Heat%20Map.png?raw=true)
+#### Heatmap based on packet traffic
+![Heatmap based on packet traffic](https://github.com/jsheng1996/CZ-3006-Labs/blob/master/cz3006lab4/img/overall/Overall%20IP%20Heat%20Map.png?raw=true)
 
